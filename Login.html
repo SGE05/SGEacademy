@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SGE Academy - Login</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fdf6ee;
+      color: #3e2c2c;
+    }
+    header {
+      background-color: #3e2c2c;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+    }
+    .container {
+      max-width: 400px;
+      margin: 2rem auto;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      text-align: center;
+      color: #3e2c2c;
+    }
+    input, button {
+      width: 100%;
+      padding: 0.8rem;
+      margin: 0.5rem 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    button {
+      background-color: #3e2c2c;
+      color: #fff;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .register-link {
+      text-align: center;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>SGE Academy</h1>
+    <p>Welcome Back!</p>
+  </header>
+
+  <div class="container">
+    <h2>Login</h2>
+    <form action="dashboard.html">
+      <input type="text" placeholder="Username or Email" required>
+      <input type="password" placeholder="Password" required>
+      <button type="submit">Login</button>
+    </form>
+    <div class="register-link">
+      New user? <a href="index.html">Register here</a>
+    </div>
+  </div>
+</body>
+</html>

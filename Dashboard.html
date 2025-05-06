@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SGE Academy - Dashboard</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fdf6ee;
+      color: #3e2c2c;
+    }
+    header {
+      background-color: #3e2c2c;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+    }
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+    .welcome {
+      background: #fff;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+    .card {
+      background: #fff;
+      padding: 1.2rem;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: scale(1.02);
+    }
+    h3 {
+      margin: 0.5rem 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>SGE Academy</h1>
+  </header>
+
+  <div class="container">
+    <div class="welcome">
+      <h2>Welcome, Gift2024</h2>
+      <p>Now you can have all A's</p>
+    </div>
+
+    <div class="grid">
+      <div class="card"><h3>Simulated CBT</h3></div>
+      <div class="card"><h3>My Courses</h3></div>
+      <div class="card"><h3>GPA Calculator</h3></div>
+      <div class="card"><h3>Leaderboard</h3></div>
+      <div class="card"><h3>Timetable</h3></div>
+      <div class="card"><h3>My Performance</h3></div>
+    </div>
+
+    <h2 style="margin-top: 2rem;">CBT Courses</h2>
+    <div class="grid">
+      <div class="card">GST 111</div>
+      <div class="card">GST 112</div>
+      <div class="card">GST 113</div>
+      <div class="card">PHY 111</div>
+      <div class="card">BIO 111</div>
+      <div class="card">ZOO 111</div>
+      <div class="card">MTH 111</div>
+      <div class="card">CHE 111</div>
+      <div class="card">PHY 113</div>
+      <div class="card">COS 111</div>
+    </div>
+  </div>
+</body>
+</html>

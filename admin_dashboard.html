@@ -1,0 +1,93 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard - SGE Academy</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+    th, td {
+      padding: 0.8rem;
+      text-align: left;
+    }
+    th {
+      background-color: #3e2c2c;
+      color: white;
+    }
+    #dashboard {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Admin Dashboard - SGE Academy</h1>
+  </header>  <div class="container" id="loginSection">
+    <h2>Enter Admin Password</h2>
+    <input type="password" id="adminPass" placeholder="Enter password...">
+    <button onclick="verifyAdmin()">Login</button>
+    <p id="error" style="color: red;"></p>
+  </div>  <div class="container" id="dashboard">
+    <h2>Website Monitoring Panel</h2>
+    <p>Welcome, Admin. Below is an overview of user activity and course engagement.</p><h3>Recent Registrations</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Course Registered</th>
+      <th>Registration Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Jane Doe</td>
+      <td>jane@example.com</td>
+      <td>GST 111</td>
+      <td>2025-05-06</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>CBT Attempts</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Student</th>
+      <th>Course</th>
+      <th>Score</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>John Smith</td>
+      <td>GST 112</td>
+      <td>2/2</td>
+      <td>2025-05-06</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>  <script>
+    function verifyAdmin() {
+      const correctPassword = "sgeadmin123"; // You can change this password
+      const input = document.getElementById("adminPass").value;
+      const error = document.getElementById("error");
+
+      if (input === correctPassword) {
+        document.getElementById("loginSection").style.display = "none";
+        document.getElementById("dashboard").style.display = "block";
+      } else {
+        error.textContent = "Incorrect password. Access denied.";
+      }
+    }
+  </script></body>
+</html>
